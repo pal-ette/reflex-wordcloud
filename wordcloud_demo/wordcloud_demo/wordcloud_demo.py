@@ -33,6 +33,8 @@ def index() -> rx.Component:
                     "rotationAngles": [-90, 0],
                     "fontFamily": "impact",
                 },
+                size=(5, 5),
+                min_size=(400, 200),
             ),
             align="center",
             spacing="7",
