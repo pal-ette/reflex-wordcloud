@@ -5,6 +5,7 @@ from rxconfig import config
 import reflex as rx
 
 from reflex_wordcloud import wordcloud
+from .words import words
 
 filename = f"{config.app_name}/{config.app_name}.py"
 
@@ -21,11 +22,18 @@ def index() -> rx.Component:
         rx.vstack(
             rx.heading("Welcome to Reflex!", size="9"),
             rx.text(
-                "Test your custom component by editing ", 
+                "Test your custom component by editing ",
                 rx.code(filename),
                 font_size="2em",
             ),
-            wordcloud(),
+            wordcloud(
+                words=words,
+                options={
+                    "rotations": 2,
+                    "rotationAngles": [-90, 0],
+                    "fontFamily": "impact",
+                },
+            ),
             align="center",
             spacing="7",
         ),
