@@ -9,17 +9,20 @@ description = "Reflex custom component wordcloud"
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.8"
-authors = [{ name = "", email = "YOUREMAIL@domain.com" }]
-keywords = ["reflex","reflex-custom-components"]
+authors = [{ name = "Pal-ette", email = "contact@pal-ette.org" }]
+keywords = ["reflex", "reflex-custom-components", "reflex-wordcloud", "wordcloud"]
 
-dependencies = ["reflex>=0.4.2"]
+dependencies = ["reflex>=0.5.10"]
 
 classifiers = ["Development Status :: 4 - Beta"]
 
 [project.urls]
+homepage = "https://github.com/pal-ette/reflex-wordcloud"
+source = "https://github.com/pal-ette/reflex-wordcloud"
 
 [project.optional-dependencies]
 dev = ["build", "twine"]
+
 
 [tool.setuptools.packages.find]
 where = ["custom_components"]
