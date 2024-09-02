@@ -1,2 +1,2 @@
 reflex==0.5.10
-reflex-wordcloud==0.0.2
+reflex-wordcloud

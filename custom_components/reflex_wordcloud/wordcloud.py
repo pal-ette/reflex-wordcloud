@@ -16,6 +16,8 @@ class Wordcloud(NoSSRComponent):
 
     words: rx.Var[List[Dict[str, str | int]]] = []
 
+    max_words: rx.Var[int] = 100
+
     options: rx.Var[Dict[str, Any]] = {}
 
     size: rx.Var[Tuple[int, int]] = (600, 400)
