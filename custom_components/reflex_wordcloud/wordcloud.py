@@ -2,7 +2,7 @@
 
 import reflex as rx
 from reflex.components.component import NoSSRComponent
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Optional
 
 
 class Wordcloud(NoSSRComponent):
@@ -20,9 +20,9 @@ class Wordcloud(NoSSRComponent):
 
     options: rx.Var[Dict[str, Any]] = {}
 
-    size: rx.Var[Tuple[int, int]] = (600, 400)
+    size: Optional[Tuple[int, int]] = None
 
-    min_size: rx.Var[Tuple[int, int]] = (300, 300)
+    min_size: Optional[Tuple[int, int]] = None
 
 
 wordcloud = Wordcloud.create
